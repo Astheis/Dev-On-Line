@@ -1,11 +1,17 @@
-body{
+body#accueil{
     background-color: black;
+    background-image: url("../img/direct.jpg");
+    background-size: cover;
+    background-position: right 50% bottom 90%;;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 66px;
+    height: 40px;
     line-height: 66px;
 }
 
-
+/**{
+    border:1px dashed #3A5FCD;
+}*/
 
 .m-left{
     float: left;
@@ -28,12 +34,38 @@ body{
 }
 
 .m-link{
+    position: relative;
     text-decoration: none;
     color: blanchedalmond;
     text-transform: ;
     font-weight: 700;
-    padding: 0;margin: 0 10px;
+    padding: 0 ;margin-right: 100px;
+    z-index: 2;
 }
+
+.timer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+#carre {
+    height: 350px;
+    width: 350px;
+    background: black;
+   
+    -ms-transform: rotate(45deg); /* Internet Explorer */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari et Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+}
+
+
+
+
 /*
 .m-link:hover{  
     font-family: bold cursive;
