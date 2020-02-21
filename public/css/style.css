@@ -13,8 +13,18 @@ body#galeriepony{
 #pony{
     background-color: #dfded9;
     display: flex;
-    align-content: flex-start;
+    flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
 
+}
+
+#pony img:hover {
+	transform-origin: 50% 50%;
+	transform: scale(2);
+	z-index: 999;
+	border-radius: 5px;
+	box-shadow: none;
 }
 
 .fauve{
@@ -60,10 +70,6 @@ body#galeriepony{
     margin-right: ;
     display: block;
 }*/
-
-h1{
-    font-family: 'Dancing Script', cursive;
-}
 
 .a4 {
     border-top: 1px solid #000000;
@@ -177,7 +183,7 @@ h1{
         background: -o-linear-gradient(top, #dfded9, #dfded9);
         }
     
-
+/*
 ul{
         width: auto;
         height:auto;
@@ -200,7 +206,7 @@ ul li:nth-child(2){
 ul img{
         position:absolute;
         z-index:1;
-        height:400px;width:auto;
+        height:500px;width:auto;
         margin:100px;
         box-shadow:0 0 3px #dfded9;
         -webkit-transition:all .5s cubic-bezier(.6,2,.4,1);
